@@ -1,0 +1,98 @@
+SECURITY RECON REPORT — AI JOB MATCH AGENT
+Generated: 2026-03-06 22:55:17
+Target:    https://ai-job-match-agent-686566480080.us-central1.run.app
+Author:    Devakinandan Palla
+
+============================================================
+  1. HTTP RESPONSE HEADERS
+============================================================
+
+Status Code: 200
+Final URL:   https://ai-job-match-agent-686566480080.us-central1.run.app/
+
+--- Security Header Analysis ---
+  [MISSING]  Strict-Transport-Security
+ERROR: 'charmap' codec can't encode character '\u2192' in position 13: character maps to <undefined>
+
+============================================================
+  2. SSL/TLS CERTIFICATE
+============================================================
+
+  Subject:    {'commonName': '*.a.run.app'}
+  Issuer:     {'countryName': 'US', 'organizationName': 'Google Trust Services', 'commonName': 'WR2'}
+  Valid From: Feb  2 08:36:19 2026 GMT
+  Valid To:   Apr 27 08:36:18 2026 GMT
+  SANs:       (('DNS', '*.a.run.app'), ('DNS', 'run.app'), ('DNS', '*.africa-south1.run.app'), ('DNS', '*.asia-east1.run.app'), ('DNS', '*.asia-east2.run.app'), ('DNS', '*.asia-northeast1.run.app'), ('DNS', '*.asia-northeast2.run.app'), ('DNS', '*.asia-northeast3.run.app'), ('DNS', '*.asia-south1.run.app'), ('DNS', '*.asia-south2.run.app'), ('DNS', '*.asia-southeast1.run.app'), ('DNS', '*.asia-southeast2.run.app'), ('DNS', '*.asia-southeast3.run.app'), ('DNS', '*.australia-southeast1.run.app'), ('DNS', '*.australia-southeast2.run.app'), ('DNS', '*.europe-central2.run.app'), ('DNS', '*.europe-north1.run.app'), ('DNS', '*.europe-north2.run.app'), ('DNS', '*.europe-north3.run.app'), ('DNS', '*.europe-southwest1.run.app'), ('DNS', '*.europe-west1.run.app'), ('DNS', '*.europe-west10.run.app'), ('DNS', '*.europe-west12.run.app'), ('DNS', '*.europe-west15.run.app'), ('DNS', '*.europe-west2.run.app'), ('DNS', '*.europe-west3.run.app'), ('DNS', '*.europe-west4.run.app'), ('DNS', '*.europe-west5.run.app'), ('DNS', '*.europe-west6.run.app'), ('DNS', '*.europe-west8.run.app'), ('DNS', '*.europe-west9.run.app'), ('DNS', '*.me-central1.run.app'), ('DNS', '*.me-central2.run.app'), ('DNS', '*.me-west1.run.app'), ('DNS', '*.northamerica-northeast1.run.app'), ('DNS', '*.northamerica-northeast2.run.app'), ('DNS', '*.northamerica-south1.run.app'), ('DNS', '*.southamerica-east1.run.app'), ('DNS', '*.southamerica-west1.run.app'), ('DNS', '*.us-central1.run.app'), ('DNS', '*.us-central2.run.app'), ('DNS', '*.us-east1.run.app'), ('DNS', '*.us-east4.run.app'), ('DNS', '*.us-east5.run.app'), ('DNS', '*.us-east7.run.app'), ('DNS', '*.us-south1.run.app'), ('DNS', '*.us-west1.run.app'), ('DNS', '*.us-west2.run.app'), ('DNS', '*.us-west3.run.app'), ('DNS', '*.us-west4.run.app'), ('DNS', '*.us-west8.run.app'), ('DNS', '*.africa-south1.mtls.run.app'), ('DNS', '*.asia-east1.mtls.run.app'), ('DNS', '*.asia-east2.mtls.run.app'), ('DNS', '*.asia-northeast1.mtls.run.app'), ('DNS', '*.asia-northeast2.mtls.run.app'), ('DNS', '*.asia-northeast3.mtls.run.app'), ('DNS', '*.asia-south1.mtls.run.app'), ('DNS', '*.asia-south2.mtls.run.app'), ('DNS', '*.asia-southeast1.mtls.run.app'), ('DNS', '*.asia-southeast2.mtls.run.app'), ('DNS', '*.asia-southeast3.mtls.run.app'), ('DNS', '*.australia-southeast1.mtls.run.app'), ('DNS', '*.australia-southeast2.mtls.run.app'), ('DNS', '*.europe-central2.mtls.run.app'), ('DNS', '*.europe-north1.mtls.run.app'), ('DNS', '*.europe-north2.mtls.run.app'), ('DNS', '*.europe-north3.mtls.run.app'), ('DNS', '*.europe-southwest1.mtls.run.app'), ('DNS', '*.europe-west1.mtls.run.app'), ('DNS', '*.europe-west10.mtls.run.app'), ('DNS', '*.europe-west12.mtls.run.app'), ('DNS', '*.europe-west15.mtls.run.app'), ('DNS', '*.europe-west2.mtls.run.app'), ('DNS', '*.europe-west3.mtls.run.app'), ('DNS', '*.europe-west4.mtls.run.app'), ('DNS', '*.europe-west5.mtls.run.app'), ('DNS', '*.europe-west6.mtls.run.app'), ('DNS', '*.europe-west8.mtls.run.app'), ('DNS', '*.europe-west9.mtls.run.app'), ('DNS', '*.me-central1.mtls.run.app'), ('DNS', '*.me-central2.mtls.run.app'), ('DNS', '*.me-west1.mtls.run.app'), ('DNS', '*.northamerica-northeast1.mtls.run.app'), ('DNS', '*.northamerica-northeast2.mtls.run.app'), ('DNS', '*.northamerica-south1.mtls.run.app'), ('DNS', '*.southamerica-east1.mtls.run.app'), ('DNS', '*.southamerica-west1.mtls.run.app'), ('DNS', '*.us-central1.mtls.run.app'), ('DNS', '*.us-central2.mtls.run.app'), ('DNS', '*.us-east1.mtls.run.app'), ('DNS', '*.us-east4.mtls.run.app'), ('DNS', '*.us-east5.mtls.run.app'), ('DNS', '*.us-east7.mtls.run.app'), ('DNS', '*.us-south1.mtls.run.app'), ('DNS', '*.us-west1.mtls.run.app'), ('DNS', '*.us-west2.mtls.run.app'), ('DNS', '*.us-west3.mtls.run.app'), ('DNS', '*.us-west4.mtls.run.app'), ('DNS', '*.us-west8.mtls.run.app'))
+  [OK] Certificate valid for 51 more days
+
+============================================================
+  3. COMMON ENDPOINT DISCOVERY
+============================================================
+
+  ERR  https://ai-job-match-agent-686566480080.us-central1.run.app/ — 'charmap' codec can't encode character '\u2190' in position 69: character maps to <undefined>
+  404  https://ai-job-match-agent-686566480080.us-central1.run.app/login
+  ERR  https://ai-job-match-agent-686566480080.us-central1.run.app/dashboard — 'charmap' codec can't encode character '\u2190' in position 78: character maps to <undefined>
+  404  https://ai-job-match-agent-686566480080.us-central1.run.app/api
+  404  https://ai-job-match-agent-686566480080.us-central1.run.app/api/health
+  404  https://ai-job-match-agent-686566480080.us-central1.run.app/api/jobs
+  404  https://ai-job-match-agent-686566480080.us-central1.run.app/api/user
+  404  https://ai-job-match-agent-686566480080.us-central1.run.app/api/auth
+  307  https://ai-job-match-agent-686566480080.us-central1.run.app/auth/callback
+  404  https://ai-job-match-agent-686566480080.us-central1.run.app/robots.txt
+  404  https://ai-job-match-agent-686566480080.us-central1.run.app/sitemap.xml
+  404  https://ai-job-match-agent-686566480080.us-central1.run.app/.well-known/security.txt
+  404  https://ai-job-match-agent-686566480080.us-central1.run.app/.env
+  404  https://ai-job-match-agent-686566480080.us-central1.run.app/.env.local
+  404  https://ai-job-match-agent-686566480080.us-central1.run.app/config
+  404  https://ai-job-match-agent-686566480080.us-central1.run.app/admin
+  404  https://ai-job-match-agent-686566480080.us-central1.run.app/api/admin
+  404  https://ai-job-match-agent-686566480080.us-central1.run.app/_next/static
+  ERR  https://ai-job-match-agent-686566480080.us-central1.run.app/favicon.ico — 'charmap' codec can't encode character '\u2190' in position 80: character maps to <undefined>
+  404  https://ai-job-match-agent-686566480080.us-central1.run.app/api/docs
+  404  https://ai-job-match-agent-686566480080.us-central1.run.app/swagger
+  404  https://ai-job-match-agent-686566480080.us-central1.run.app/openapi.json
+
+============================================================
+  4. INFORMATION DISCLOSURE
+============================================================
+
+  ERR  https://ai-job-match-agent-686566480080.us-central1.run.app/.env — 'charmap' codec can't encode character '\u2192' in position 73: character maps to <undefined>
+  ERR  https://ai-job-match-agent-686566480080.us-central1.run.app/.env.local — 'charmap' codec can't encode character '\u2192' in position 79: character maps to <undefined>
+  ERR  https://ai-job-match-agent-686566480080.us-central1.run.app/.env.production — 'charmap' codec can't encode character '\u2192' in position 84: character maps to <undefined>
+  ERR  https://ai-job-match-agent-686566480080.us-central1.run.app/config.json — 'charmap' codec can't encode character '\u2192' in position 80: character maps to <undefined>
+  ERR  https://ai-job-match-agent-686566480080.us-central1.run.app/package.json — 'charmap' codec can't encode character '\u2192' in position 81: character maps to <undefined>
+  ERR  https://ai-job-match-agent-686566480080.us-central1.run.app/.git/config — 'charmap' codec can't encode character '\u2192' in position 80: character maps to <undefined>
+  ERR  https://ai-job-match-agent-686566480080.us-central1.run.app/.git/HEAD — 'charmap' codec can't encode character '\u2192' in position 78: character maps to <undefined>
+  ERR  https://ai-job-match-agent-686566480080.us-central1.run.app/server.js — 'charmap' codec can't encode character '\u2192' in position 78: character maps to <undefined>
+  ERR  https://ai-job-match-agent-686566480080.us-central1.run.app/next.config.js — 'charmap' codec can't encode character '\u2192' in position 83: character maps to <undefined>
+  ERR  https://ai-job-match-agent-686566480080.us-central1.run.app/api/config — 'charmap' codec can't encode character '\u2192' in position 79: character maps to <undefined>
+
+============================================================
+  5. COOKIE SECURITY ANALYSIS
+============================================================
+
+  No cookies set on homepage.
+
+============================================================
+  6. CORS CONFIGURATION
+============================================================
+
+  Origin: https://evil.com
+    Access-Control-Allow-Origin:      Not set
+    Access-Control-Allow-Credentials: Not set
+  Origin: https://attacker.com
+    Access-Control-Allow-Origin:      Not set
+    Access-Control-Allow-Credentials: Not set
+  Origin: null
+    Access-Control-Allow-Origin:      Not set
+    Access-Control-Allow-Credentials: Not set
+  Origin: https://ai-job-match-agent-686566480080.us-central1.run.app
+    Access-Control-Allow-Origin:      Not set
+    Access-Control-Allow-Credentials: Not set
+
+============================================================
+  RECON COMPLETE
+============================================================
+
+Full output saved to: reports/recon-output.txt
+Next step: Review findings and move to Phase 4 — OWASP Top 10 testing
