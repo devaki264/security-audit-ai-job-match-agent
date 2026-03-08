@@ -117,9 +117,9 @@ This ensures the server validates the session **before** serving the dashboard H
 ## Remediation Status
 
 - [x] Identified
-- [ ] Reported to development team
-- [ ] Fix implemented
-- [ ] Fix verified
+- [x] Reported to development team
+- [x] Fix implemented
+- [x] Fix verified
 
 ---
 
