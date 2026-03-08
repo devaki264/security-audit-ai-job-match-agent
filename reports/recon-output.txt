@@ -1,5 +1,5 @@
 SECURITY RECON REPORT - AI JOB MATCH AGENT
-Generated: 2026-03-07 16:42:19
+Generated: 2026-03-07 23:15:52
 Target:    https://ai-job-match-agent-686566480080.us-central1.run.app
 Author:    Devakinandan Palla
 
@@ -11,37 +11,43 @@ Status Code: 200
 Final URL:   https://ai-job-match-agent-686566480080.us-central1.run.app/
 
 --- Security Header Analysis ---
-  [MISSING]  Strict-Transport-Security
+  [PRESENT]  Strict-Transport-Security: max-age=31536000; includeSubDomains
              HSTS - forces HTTPS
-  [MISSING]  Content-Security-Policy
+  [PRESENT]  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:;
              CSP - prevents XSS
-  [MISSING]  X-Frame-Options
+  [PRESENT]  X-Frame-Options: DENY
              Prevents clickjacking
-  [MISSING]  X-Content-Type-Options
+  [PRESENT]  X-Content-Type-Options: nosniff
              Prevents MIME sniffing
-  [MISSING]  Referrer-Policy
+  [PRESENT]  Referrer-Policy: strict-origin-when-cross-origin
              Controls referrer info leakage
-  [MISSING]  Permissions-Policy
+  [PRESENT]  Permissions-Policy: geolocation=(), microphone=(), camera=()
              Controls browser features
-  [MISSING]  X-XSS-Protection
+  [PRESENT]  X-XSS-Protection: 1; mode=block
              Legacy XSS filter
   [PRESENT]  Cache-Control: s-maxage=31536000
              Controls caching behavior
 
-Summary: 1 present, 7 missing
-Missing: Strict-Transport-Security, Content-Security-Policy, X-Frame-Options, X-Content-Type-Options, Referrer-Policy, Permissions-Policy, X-XSS-Protection
+Summary: 8 present, 0 missing
+Missing: 
 
 --- All Response Headers ---
+  strict-transport-security: max-age=31536000; includeSubDomains
+  content-security-policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:;
+  x-frame-options: DENY
+  x-content-type-options: nosniff
+  referrer-policy: strict-origin-when-cross-origin
+  permissions-policy: geolocation=(), microphone=(), camera=()
+  x-xss-protection: 1; mode=block
   vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
   x-nextjs-cache: HIT
   x-nextjs-prerender: 1, 1
   x-nextjs-stale-time: 300
-  x-powered-by: Next.js
   cache-control: s-maxage=31536000
-  etag: "n3emppuclu6ba"
+  etag: "12sl9bggxcm6ba"
   content-type: text/html; charset=utf-8
   content-encoding: gzip
-  date: Sat, 07 Mar 2026 21:42:18 GMT
+  date: Sun, 08 Mar 2026 04:15:52 GMT
   server: Google Frontend
   Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
   Transfer-Encoding: chunked
@@ -71,7 +77,7 @@ Missing: Strict-Transport-Security, Content-Security-Policy, X-Frame-Options, X-
   307  https://ai-job-match-agent-686566480080.us-central1.run.app/auth/callback  <- REDIRECT -> https://ai-job-match-agent-686566480080.us-central1.run.app/auth/login
   404  https://ai-job-match-agent-686566480080.us-central1.run.app/robots.txt
   404  https://ai-job-match-agent-686566480080.us-central1.run.app/sitemap.xml
-  404  https://ai-job-match-agent-686566480080.us-central1.run.app/.well-known/security.txt
+  200  https://ai-job-match-agent-686566480080.us-central1.run.app/.well-known/security.txt  <- ACCESSIBLE
   404  https://ai-job-match-agent-686566480080.us-central1.run.app/.env
   404  https://ai-job-match-agent-686566480080.us-central1.run.app/.env.local
   404  https://ai-job-match-agent-686566480080.us-central1.run.app/config
@@ -122,7 +128,7 @@ Missing: Strict-Transport-Security, Content-Security-Policy, X-Frame-Options, X-
 ============================================================
 
   404  /robots.txt  [MISSING] - Crawler access control
-  404  /.well-known/security.txt  [MISSING] - Security contact (RFC 9116)
+  200  /.well-known/security.txt  [OK]
   404  /sitemap.xml  [MISSING] - Site structure
 
 ============================================================

@@ -73,8 +73,8 @@ You can also generate one at: https://securitytxt.org
 ## Remediation Status
 
 - [x] Identified
-- [ ] Fix implemented
-- [ ] Fix verified
+- [x] Fix implemented
+- [x] Fix verified
 
 ---
 

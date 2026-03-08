@@ -111,8 +111,8 @@ module.exports = {
 ## Remediation Status
 
 - [x] Identified
-- [ ] Fix implemented
-- [ ] Fix verified
+- [x] Fix implemented
+- [x] Fix verified
 
 ---
 

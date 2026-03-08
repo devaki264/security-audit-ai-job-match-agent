@@ -78,8 +78,8 @@ Note: The `x-nextjs-cache` and `x-nextjs-prerender` headers are harder to remove
 ## Remediation Status
 
 - [x] Identified
-- [ ] Fix implemented
-- [ ] Fix verified
+- [x] Fix implemented
+- [x] Fix verified
 
 ---
 
